@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
         login = l.getText().toString();
         senha = s.getText().toString();
 
-       // if (login.equals("vilson.l") && (senha.equals("1234"))){
+        if (login.equals("vilson.l") && (senha.equals("1234"))){
             Intent i = new Intent(this, telaPrincipal.class);
             startActivity(i);
-       // }else{
-       //     Toast toast = Toast.makeText(getApplicationContext(), "Login ou Senha Incorreto(s)",Toast.LENGTH_LONG);
-       //     toast.show();
-        //}
+        }else{
+            Toast toast = Toast.makeText(getApplicationContext(), "Login ou Senha Incorreto(s)",Toast.LENGTH_LONG);
+            toast.show();
+        }
 
 
     }

@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fundo7"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".CadastrarArtigo"
     tools:layout_editor_absoluteY="56dp"
-    tools:showIn="@layout/activity_cadastrar_artigo">
+    tools:showIn="@layout/cadastrarartigo">
 
     <EditText
         android:id="@+id/titulo"
@@ -18,17 +19,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Titulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Cadastro de Artigo"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,6 +32,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Descrição"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
@@ -52,6 +44,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:text="Categoria:"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,6 +57,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="165dp"
         android:text="Tipo do Artigo"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -75,6 +69,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="13dp"
         android:text="Publico:"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="@+id/radioGroup4"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
@@ -94,35 +89,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Estágio" />
+            android:text="Estágio"
+            android:textColor="@color/colorAccent" />
 
         <RadioButton
             android:id="@+id/projetoExtensao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Projeto de Extensão" />
+            android:text="Projeto de Extensão"
+            android:textColor="@color/colorAccent" />
 
         <RadioButton
             android:id="@+id/intevaloCultural"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Intevalo Cultural" />
+            android:text="Intevalo Cultural"
+            android:textColor="@color/colorAccent" />
 
         <RadioButton
             android:id="@+id/palestras"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Palestras" />
+            android:text="Palestras"
+            android:textColor="@color/colorAccent" />
 
         <RadioButton
             android:id="@+id/bolsa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Bolsa" />
+            android:text="Bolsa"
+            android:textColor="@color/colorAccent" />
     </RadioGroup>
 
     <RadioGroup
@@ -141,14 +141,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Evento" />
+            android:text="Evento"
+            android:textColor="@color/colorAccent" />
 
         <RadioButton
             android:id="@+id/noticia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Notícia" />
+            android:text="Notícia"
+            android:textColor="@color/colorAccent" />
     </RadioGroup>
 
     <RadioGroup
@@ -167,14 +169,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Externo" />
+            android:text="Externo"
+            android:textColor="@color/colorAccent" />
 
         <RadioButton
             android:id="@+id/interno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Interno" />
+            android:text="Interno"
+            android:textColor="@color/colorAccent" />
     </RadioGroup>
 
     <Button
@@ -182,10 +186,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Cadastrar"
+        android:background="#212121"
         android:onClick="cadastrar"
+        android:text="Cadastrar"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:text="Cadastro de Artigo" />
 
 </android.support.constraint.ConstraintLayout>

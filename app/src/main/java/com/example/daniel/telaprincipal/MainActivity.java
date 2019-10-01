@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import static android.service.autofill.Validators.and;
-
 public class MainActivity extends AppCompatActivity {
     String login;
     String senha;
@@ -16,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.telalogin);
     }
 
     public void logar(View view) {
@@ -28,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
         if (login.equals("vilson.l") && (senha.equals("1234"))){
             Intent i = new Intent(this, telaPrincipal.class);
             startActivity(i);
-        }else{
-            Toast toast = Toast.makeText(getApplicationContext(), "Login ou Senha Incorreto(s)",Toast.LENGTH_LONG);
+        }else {
+
+            Toast toast = Toast.makeText(getApplicationContext(), "Login ou Senha Incorreto(s)", Toast.LENGTH_LONG);
             toast.show();
+
         }
-
-
     }
 }

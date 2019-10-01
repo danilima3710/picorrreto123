@@ -6,9 +6,10 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/cadastrar"
             android:title="Cadastrar Artigo"
-            android:onClick="CadastraArtigo"/>
+            android:onClick="CadastraArtigo"
+            />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"

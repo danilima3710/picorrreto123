@@ -7,10 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -24,7 +22,7 @@ public class CadastrarArtigo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastrar_artigo);
+        setContentView(R.layout.cadastrarartigo);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -55,7 +53,7 @@ public class CadastrarArtigo extends AppCompatActivity {
         if (estagio) {
             objetoArtigo.categoria = " Estágio ";
         }else {
-            if (bolsa) {
+            if (bolsa){
                 objetoArtigo.categoria = "Bolsa";
             } else {
                 if (palestra) {
